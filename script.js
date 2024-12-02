@@ -164,3 +164,17 @@ let obj4 = {
 Object.keys(obj4).forEach((key)=>{console.log(`Key: ${key}`)})
 Object.values(obj4).forEach((value)=>{console.log(`Value: ${value}`)})
 
+var request1 = new XMLHttpRequest()
+request.open('GET', 'https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json')
+request.send()
+request.onload = ()=>{
+  var response1 = JSON.parse(request.response)
+  console.log(response1)
+  let asiaRegion = response1.filter((item)=>{
+      return item.region === "Asia" && item.population<200000
+  }).map((ele)=>ele.capital)
+  console.log(asiaRegion)
+  let totalPopulation = response1.reduce((acc,cv)=>acc+cv.population,0)
+  console.log(totalPopulation)
+}
+
