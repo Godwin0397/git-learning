@@ -4,8 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .main{
+            background-color: blueviolet;
+        }
+        .main1{
+            background-color: rgb(195, 31, 31);
+        }
+        #idselector{
+            background-color: bisque;
+        }
+        h1{
+            background-color: chartreuse;
+        }
+        .linearGrad{
+            background-image: linear-gradient(red, blue, yellow);
+        }
+        .linearGrad1{
+            background-image: linear-gradient(to right,red, blue, yellow);
+        }
+        .linearGrad2{
+            background-image: linear-gradient(90deg,red, blue, yellow);
+        }
+    </style>
 </head>
 <body>
     <script src="script.js"></script>
+    <h1>This is Header1</h1>
+    <h2>This is Header2</h2>
+    <h3>This is Header3</h3>
+    <h4>This is Header4</h4>
+    <h5>This is Header5</h5>
+    <h6>This is Header6</h6>
+    <p>This is paragraph tag</p>
+    <a href="https://www.google.com" target="_parent">Click here for Google</a>
+
+    <form>
+        <input type="checkbox" name="" id="">
+        <input type="button" value="">
+        <input type="text" name="" id="">
+        <input type="file" name="", id="">
+        <input type="range" name="" id="">
+        <input type="radio" name="" id=""><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="Email" id="email" required><br><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="" id="password" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <ol>
+        <li>
+            one
+        </li>
+    </ol>
+    <ul>
+        <li>
+            one
+        </li>
+    </ul>
+
+    <dl>
+        <dt>Hello</dt>
+        <dd>this description</dd>
+    </dl>
+
+    <form>
+        <label for="male">Male</label>
+        <input type="radio" value="male" id="male">
+        <label for="female">Female</label>
+        <input type="radio" value="female" id="female">
+    </form>
+
+
+    <form>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+    </form>
+
+    <div>This is a div</div>
+    <section>This is a setion</section>
+    <article>This is a article</article>
+    <span>This is a first span</span>
+    <span>This is a second span</span>
+    <span>This is a third span</span>
+
+    <div style="background-color: aquamarine;">This is inline css</div>
+    <div class="main">This is a internal css with class selector</div>
+    <div class="main main1">This is a internal css with two class name</div>
+    <div id="idselector">This is a internal css with id selector</div>
+    <h1>This is tag selector</h1>
+    <div class="extenalCSS">This is External css</div>
+    <div>This is <mark>using</mark> mark tag</div>
+    <div class="linearGrad">This is Linear Gradient</div>
+    <div class="linearGrad1">This is Linear Gradient To right Direction based</div>
+    <div class="linearGrad2">This is Linear Gradient Angle based</div>
 </body>
 </html>
