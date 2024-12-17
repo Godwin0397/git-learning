@@ -27,18 +27,87 @@
         .linearGrad2{
             background-image: linear-gradient(90deg,red, blue, yellow);
         }
+        .hoverpseudoclass:hover{
+            background-color: orange;
+        }
+        .linkPseudoClass:link{
+            color: pink;
+        }
+
+        .visitedPseudoClass:visited{
+            color: brown;
+        }
+
+        .borderClass{
+            border: 2px solid green;
+        }
+        .parent{
+            background-color: green;
+            font-size: 32px;
+        }
+        .child1{
+            background-color: yellow;
+            position: relative;
+            top: 30px;
+            left: 20px;
+            font-size: 32px;
+        }
+        .child2{
+            background-color: orange;
+            font-size: 32px;
+        }
+        .parent1{
+            background-color: pink;
+            font-size: 32px;
+            position: relative;
+        }
+        .child3{
+            background-color: yellow;
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            font-size: 32px;
+        }
+        .child4{
+            background-color: orange;
+            font-size: 32px;
+        }
+
+        .parent2{
+            background-color: pink;
+            font-size: 32px;
+            position: fixed;
+            top: 30px;
+        }
+        h2{
+            position: sticky;
+            top: 0px;
+        }
+
+        .flex-box{
+            display: flex;
+            background-color: orange;
+        }
+
+        .flex-box>div{
+            background-color: green;
+            width: 100px;
+            height: 20px;
+            margin: 6px;
+        }
+
     </style>
 </head>
 <body>
     <script src="script.js"></script>
     <h1>This is Header1</h1>
-    <h2>This is Header2</h2>
+    <h2>This is Header2 example with sticky</h2>
     <h3>This is Header3</h3>
     <h4>This is Header4</h4>
     <h5>This is Header5</h5>
     <h6>This is Header6</h6>
     <p>This is paragraph tag</p>
-    <a href="https://www.google.com" target="_parent">Click here for Google</a>
+    <a href="https://www.instagram.com" target="_parent">Click here for Google</a>
 
     <form>
         <input type="checkbox" name="" id="">
@@ -102,5 +171,34 @@
     <div class="linearGrad">This is Linear Gradient</div>
     <div class="linearGrad1">This is Linear Gradient To right Direction based</div>
     <div class="linearGrad2">This is Linear Gradient Angle based</div>
+
+    <div class="hoverpseudoclass">this is pseudo hover event property</div>
+
+    <a href="https://www.google.com" class="linkPseudoClass">Click Here</a><br>
+
+    <a href="https://www.google.com" class="visitedPseudoClass">Click Here for instagram</a>
+
+    <div class="borderClass">This is a border</div>
+
+    <div class="parent">
+        <div class="child1">This is child 1
+            <div class="child2">this is child 2</div>
+        </div>
+    </div><br><br>
+
+    <div class="parent1">
+        <div class="child3">This is Child 3
+            <div class="child4">This is Child 4</div>
+        </div>
+    </div>
+
+    <div class="parent2">This is Parent 2 This is Fixed</div><br><br><br><br><br><br><br><br><br><br>
+    
+    <div class="flex-box">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+    </div>
+
 </body>
 </html>
