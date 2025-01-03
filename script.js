@@ -178,3 +178,9 @@ request.onload = ()=>{
   console.log(totalPopulation)
 }
 
+let missingValArr = [1,2,3,5]
+for (let x in missingValArr){
+  if (!missingValArr.includes(missingValArr[x]+1) && (missingValArr[x]+1 <= missingValArr[missingValArr.length-1])){
+      console.log(`Missing Value is ${missingValArr[x]+1}`)   
+  }
+}

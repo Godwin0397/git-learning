@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
         .main{
             background-color: blueviolet;
@@ -94,6 +95,32 @@
             width: 100px;
             height: 20px;
             margin: 6px;
+        }
+
+        @media screen and (min-width: 300px) {
+            .mediaQueryMinWidht{
+                background-color: green;
+            }
+        }
+
+        @media screen and (max-width: 290px) {
+            .mediaQueryMaxWidht{
+                background-color: red;
+            }
+        }
+
+        .overFlowProperty{
+            background-color: violet;
+            width: 200px;
+            height: 100px;
+        }
+        
+        .overFlowProperty1{
+            background-color: violet;
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+            margin-top: 150px;
         }
 
     </style>
@@ -199,6 +226,65 @@
         <div>two</div>
         <div>three</div>
     </div>
+
+    <div class="mediaQueryMaxWidht mediaQueryMinWidht">
+        This is Media Query
+    </div>
+
+    <div class="overFlowProperty">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ducimus aliquam temporibus impedit, illum, rem in esse voluptatum dignissimos similique doloremque, obcaecati sapiente at? Facere animi saepe quaerat reprehenderit exercitationem.
+    </div>
+
+    <div class="overFlowProperty1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ducimus aliquam temporibus impedit, illum, rem in esse voluptatum dignissimos similique doloremque, obcaecati sapiente at? Facere animi saepe quaerat reprehenderit exercitationem.
+    </div>
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+    </div>
+
+    <div class="container">This is a container</div><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-1">1</div>
+            <div class="col-1">2</div>
+            <div class="col-1">3</div>
+            <div class="col-1">4</div>
+            <div class="col-1">5</div>
+            <div class="col-1">6</div>
+            <div class="col-1">7</div>
+            <div class="col-1">8</div>
+            <div class="col-1">9</div>
+            <div class="col-1">10</div>
+            <div class="col-1">11</div>
+            <div class="col-1">12</div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3" style="background-color: rebeccapurple;">1</div>
+            <div class="col-3" style="background-color: red;">2</div>
+            <div class="col-3">3</div>
+            <div class="col-3">4</div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 main1">1</div>
+            <div class="col-md-4 main2">2</div>
+            <div class="col-md-4 main3">3</div>
+        </div>
+    </div>
+
+
 
 </body>
 </html>
